@@ -7,7 +7,7 @@ This project provides a simple Gradio interface to apply a sepia tone filter to 
 - Interactive Interface: Built with Gradio, allowing real-time interaction and visualization.
 - Customizable Filter: The sepia transformation can be adjusted to create different effects.
 
-##Technologies Used
+## Tools Used
 - Python: Core programming language.
 - Pillow (PIL): For image processing.
 - Gradio: To build the user interface.
