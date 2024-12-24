@@ -32,4 +32,5 @@ The sepia effect is controlled by the transformation matrix in the code:
                        tg = int(0.349 * r + 0.686 * g + 0.168 * b)
                        tb = int(0.272 * r + 0.534 * g + 0.131 * b)
 You can modify these coefficients to experiment with different color effects.                     
-
+### Adding Custom CSS
+You can style the Gradio interface by providing custom CSS. For example, to change the title and description colors:
