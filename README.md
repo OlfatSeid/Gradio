@@ -59,7 +59,7 @@ Converts spoken words in the audio file into written text.
 The interface is styled with a dark green background for enhanced aesthetics.
 
 
-Here's a README.md file tailored for your project:
+
 
 Speech-to-Text Converter
 This project provides a simple Speech-to-Text Converter using Python. It allows users to record or upload audio files, which are then transcribed into text using Google's Speech Recognition API. The interface is built with Gradio, providing a clean and user-friendly web application.
