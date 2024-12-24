@@ -58,12 +58,6 @@ Converts spoken words in the audio file into written text.
 - Custom Styling:
 The interface is styled with a dark green background for enhanced aesthetics.
 
-
-
-
-Speech-to-Text Converter
-
-
 ## Tools Used
 - [Python](https://www.python.org/): Core programming language for the application.
 - [Gradio](https://www.gradio.app/): For creating the interactive web interface.
