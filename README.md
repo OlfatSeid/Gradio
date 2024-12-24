@@ -8,9 +8,9 @@ This project provides a simple Gradio interface to apply a sepia tone filter to 
 - Customizable Filter: The sepia transformation can be adjusted to create different effects.
 
 ## Tools Used
-- Python: Core programming language.
-- Pillow (PIL): For image processing.
-- Gradio: To build the user interface.
+- [Python](https://www.python.org/): Core programming language.
+- [Pillow (PIL)](https://pypi.org/project/pillow/) : For image processing.
+- [Gradio](https://www.gradio.app/): To build the user interface.
 
 ## How It Works
 1. Input: The user uploads an image through the Gradio interface.
@@ -73,8 +73,8 @@ Converts spoken words in the audio file into written text.
 Custom Styling:
 The interface is styled with a dark green background for enhanced aesthetics.
 ## Tools Used
-[Python](https://www.python.org/): Core programming language for the application.
-[Gradio](https://www.gradio.app/): For creating the interactive web interface.
-[[SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
+- [Python](https://www.python.org/): Core programming language for the application.
+- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
+- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
 ********************************************************************************************************************************
 **********************************************************************************************************************************
