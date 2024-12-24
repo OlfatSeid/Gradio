@@ -64,13 +64,6 @@ The interface is styled with a dark green background for enhanced aesthetics.
 Speech-to-Text Converter
 This project provides a simple Speech-to-Text Converter using Python. It allows users to record or upload audio files, which are then transcribed into text using Google's Speech Recognition API. The interface is built with Gradio, providing a clean and user-friendly web application.
 
-Features
-Audio Input:
-Record audio directly using your microphone.
-Upload pre-recorded audio files.
-Text Output:
-Converts spoken words in the audio file into written text.
-
 ## Tools Used
 - [Python](https://www.python.org/): Core programming language for the application.
 - [Gradio](https://www.gradio.app/): For creating the interactive web interface.
