@@ -45,3 +45,36 @@ You can style the Gradio interface by providing custom CSS. For example, to chan
                         background-color:black;
                         }
 ***************************************************************************************************************************************
+***************************************************************************************************************************************
+# Speech-to-Text Converter
+This project provides a simple Speech-to-Text Converter using Python. It allows users to record or upload audio files, which are then transcribed into text using Google's Speech Recognition API. The interface is built with Gradio, providing a clean and user-friendly web application.
+
+## Features
+- Audio Input:
+Record audio directly using your microphone.
+Upload pre-recorded audio files.
+- Text Output:
+Converts spoken words in the audio file into written text.
+- Custom Styling:
+The interface is styled with a dark green background for enhanced aesthetics.
+
+
+Here's a README.md file tailored for your project:
+
+Speech-to-Text Converter
+This project provides a simple Speech-to-Text Converter using Python. It allows users to record or upload audio files, which are then transcribed into text using Google's Speech Recognition API. The interface is built with Gradio, providing a clean and user-friendly web application.
+
+Features
+Audio Input:
+Record audio directly using your microphone.
+Upload pre-recorded audio files.
+Text Output:
+Converts spoken words in the audio file into written text.
+Custom Styling:
+The interface is styled with a dark green background for enhanced aesthetics.
+## Tools Used
+[Python](https://www.python.org/): Core programming language for the application.
+[Gradio](https://www.gradio.app/): For creating the interactive web interface.
+[[SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
+********************************************************************************************************************************
+**********************************************************************************************************************************
