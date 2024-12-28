@@ -64,19 +64,4 @@ The interface is styled with a dark green background for enhanced aesthetics.
 - [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
 *********************************************************************************************************************************
 **********************************************************************************************************************************
-## Tools Used
-- [Python](https://www.python.org/): Core programming language for the application.
-- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
-- ## Tools Used
-- [Python](https://www.python.org/): Core programming language for the application.
-- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
-- ## Tools Used
-- [Python](https://www.python.org/): Core programming language for the application.
-- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
-- ## Tools Used
-- [Python](https://www.python.org/): Core programming language for the application.
-- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
+
