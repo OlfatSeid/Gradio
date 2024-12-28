@@ -26,7 +26,6 @@ This project provides a simple Gradio interface to apply a sepia tone filter to 
   
 ## Customization
 ### Adjusting the Sepia Tone
-
 The sepia effect is controlled by the transformation matrix in the code:
 
                        tr = int(0.393 * r + 0.769 * g + 0.189 * b)
@@ -65,3 +64,11 @@ The interface is styled with a dark green background for enhanced aesthetics.
 - [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
 *********************************************************************************************************************************
 **********************************************************************************************************************************
+## Tools Used
+- [Python](https://www.python.org/): Core programming language for the application.
+- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
+- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
+- ## Tools Used
+- [Python](https://www.python.org/): Core programming language for the application.
+- [Gradio](https://www.gradio.app/): For creating the interactive web interface.
+- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
