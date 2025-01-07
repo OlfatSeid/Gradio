@@ -19,7 +19,8 @@ This project provides a simple Gradio interface to apply a sepia tone filter to 
 ```python
    tr = int(0.393 * r + 0.769 * g + 0.189 * b)
    tg = int(0.349 * r + 0.686 * g + 0.168 * b)
-   tb = int(0.272 * r + 0.534 * g + 0.131 * b)                     
+   tb = int(0.272 * r + 0.534 * g + 0.131 * b)
+                    
  ``` 
 - The values are clipped to a maximum of 255 to prevent overflow.
 3. Output: The processed image with the sepia tone is displayed.
