@@ -27,11 +27,11 @@ This project provides a simple Gradio interface to apply a sepia tone filter to 
 ## Customization
 ### Adjusting the Sepia Tone
 The sepia effect is controlled by the transformation matrix in the code:
-
 ```pyhton
    tr = int(0.393 * r + 0.769 * g + 0.189 * b)                  
    tg = int(0.349 * r + 0.686 * g + 0.168 * b)
    tb = int(0.272 * r + 0.534 * g + 0.131 * b)
+
 ```                 
 You can modify these coefficients to experiment with different color effects.                     
 ### Adding Custom CSS
