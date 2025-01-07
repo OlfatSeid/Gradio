@@ -38,6 +38,7 @@ You can modify these coefficients to experiment with different color effects.
 ### Adding Custom CSS
 You can style the Gradio interface by providing custom CSS. For example, to change the title and description colors:
 ```python
+
    h1 {
    color: #ff5733; /* Title color */
    }
