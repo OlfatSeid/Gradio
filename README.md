@@ -48,19 +48,8 @@ You can style the Gradio interface by providing custom CSS. For example, to chan
    body {
    background-color:black;
    }
-```````
-
-
-                                   
-                                              h1 {
-                                               color: #ff5733; /* Title color */
-                                              }
-                                              p {
-                                              color: #4caf50; /* Description color */
-                                               }
-
-
-  
+```
+                                       
 ***************************************************************************************************************************************
 ***************************************************************************************************************************************
 # Speech-to-Text Converter
