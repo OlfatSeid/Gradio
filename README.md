@@ -191,7 +191,7 @@ You can customize the application as follows:
 
 ---
 
-## License
+** License**
 This project uses pre-trained models from Hugging Face.
 
 ---
