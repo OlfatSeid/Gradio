@@ -147,7 +147,6 @@ pip install transformers torch gradio pillow
    - A user-friendly interface with:
      - An image upload area.
      - A textbox to display the generated caption.
-     - Example images for quick testing.
      ```python
      demo = gr.Interface(
          fn=captioner,
@@ -157,7 +156,7 @@ pip install transformers torch gradio pillow
          description="Caption any image using a pre-trained image captioning model.",
          allow_flagging="never",
          css=".gradio-container {background-color:DarkSlateGrey;}",
-         examples=["christmas_dog.jpeg", "bird_flight.jpeg", "cow.jpeg"]
+        
      )
      ```
 
