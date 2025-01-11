@@ -196,7 +196,7 @@ This project uses pre-trained models from Hugging Face. Please check their licen
 
 ---
 
-#### Acknowledgments
+ **Acknowledgments**
 - [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
 - [Gradio](https://gradio.app/) for simplifying user interface creation.
   
