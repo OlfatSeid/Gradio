@@ -87,8 +87,7 @@ The application allows users to upload an image and returns a descriptive captio
 ## Features
 - **Interactive User Interface**: Built with Gradio for easy interaction.
 - **Pre-Trained Model**: Uses the `nlpconnect/vit-gpt2-image-captioning` model for high-quality captions.
-- **Responsive Design**: Includes a dark theme for better aesthetics.
-- **Example Images**: Provides pre-loaded example images for testing.
+
 
 ---
 
