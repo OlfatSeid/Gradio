@@ -200,5 +200,5 @@ This project uses pre-trained models from Hugging Face.
 - [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
 - [Gradio](https://gradio.app/) for simplifying user interface creation.
   
- ******************
- ******************
+ *******************
+ *******************
