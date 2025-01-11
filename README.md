@@ -192,7 +192,7 @@ You can customize the application as follows:
 ---
 
 ## License
-This project uses pre-trained models from Hugging Face. Please check their license terms before deploying this application in a commercial environment.
+This project uses pre-trained models from Hugging Face.
 
 ---
 
