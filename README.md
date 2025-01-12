@@ -191,10 +191,6 @@ You can customize the application as follows:
 
 ---
 
-** License**
-This project uses pre-trained models from Hugging Face.
-
----
 
  **Acknowledgments**
 - [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
@@ -202,3 +198,78 @@ This project uses pre-trained models from Hugging Face.
   
  ******************
  ******************
+ # Text Summarization APP
+
+This project demonstrates a simple interface for summarizing text using the pre-trained T5-Large model from Hugging Face. The application is built with Gradio for easy interaction and styled with custom CSS for a more personalized appearance.
+
+## Features
+- Summarize any text input using the T5-Large model.
+- Intuitive web-based interface powered by Gradio.
+- Custom styling for an improved user experience.
+
+## How It Works
+The application leverages the Hugging Face `transformers` library to load the T5-Large model for text summarization. The input text is processed, and the model generates a concise summary, which is then displayed in the interface.
+
+## Requirements
+Ensure you have the following Python packages installed:
+
+- `transformers`
+- `gradio`
+- `google.colab` (if using Google Colab)
+
+You can install the required libraries with:
+```bash
+pip install transformers gradio
+```
+
+## Code Overview
+### Importing Libraries
+```python
+from google.colab import userdata
+userdata.get('HF_API_KEY')
+
+import gradio as gr
+from transformers import pipeline
+```
+
+### Loading the Model
+The T5-Large model is loaded using the Hugging Face pipeline for summarization:
+```python
+summarizer = pipeline("summarization", model="t5-large")
+```
+
+### Gradio Interface
+The Gradio interface is defined as follows:
+```python
+demo = gr.Interface(
+    fn=summarizer,
+    inputs=[gr.Textbox(label="Text to summarize", lines=10)],
+    outputs=[gr.Textbox(label="Summarization", lines=6)],
+    title="Text Summarization with T5-Large Model",
+    description="Summarize any text with the t5-large model under the hood!",
+    allow_flagging="never",
+    css="""
+     .gradio-container {background-color: DarkCyan;}
+     button {background-color: Green; color: black; border-radius: 8px; border: none;}
+     button:nth-child(1) {background-color: Orange; color: white; border-radius: 8px; border: none;}
+    """
+)
+```
+This code:
+- Configures the summarizer function to handle user input.
+- Adds input and output textboxes for interaction.
+- Styles the container and buttons with CSS.
+
+## Example Usage
+1. Paste or type the text you want to summarize into the input box.
+2. Click the "Submit" button.
+3. View the generated summary in the output box.
+
+## Notes
+- Ensure you have a valid Hugging Face API key if needed for model access.
+- This script is designed for use in a Python environment like Google Colab or Jupyter Notebook.
+
+## License
+This project is licensed under the MIT License. Feel free to modify and use it as needed.
+
+
