@@ -189,8 +189,6 @@ You can customize the application as follows:
   demo.launch(server_port=8080)
   ```
 
----
-
 
  **Acknowledgments**
 - [Hugging Face](https://huggingface.co/) for providing the pre-trained models.
@@ -198,6 +196,7 @@ You can customize the application as follows:
   
  ******************
  ******************
+ 
  # Text Summarization APP
 
 This project demonstrates a simple interface for summarizing text using the pre-trained T5-Large model from Hugging Face. The application is built with Gradio for easy interaction and styled with custom CSS for a more personalized appearance.
