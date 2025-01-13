@@ -401,9 +401,9 @@ demo.launch()
 ## **Acknowledgments**
 - Hugging Face for providing the `dslim/bert-base-NER` model.
 - Gradio for simplifying the creation of interactive web applications.
+---------------------
 
-
-***********
+*********
 ## License
 This project is licensed under the MIT License. Feel free to modify and use it as needed.
 
