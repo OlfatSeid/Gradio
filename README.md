@@ -70,7 +70,7 @@ The interface is styled with a dark green background for enhanced aesthetics.
 - [Gradio](https://www.gradio.app/): For creating the interactive web interface.
 - [SpeechRecognition](https://pypi.org/project/SpeechRecognition/): For converting speech to text using Google's API.
 ***************************************************************************************
-************************************************************************************************
+***************************************************************************************
 #  Image Captioning Application
 
 ## Overview
