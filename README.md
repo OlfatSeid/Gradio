@@ -268,7 +268,10 @@ This code:
 ## Notes
 - Ensure you have a valid Hugging Face API key if needed for model access.
 - This script is designed for use in a Python environment like Google Colab or Jupyter Notebook.
+**********
+***********
 
+***********
 ## License
 This project is licensed under the MIT License. Feel free to modify and use it as needed.
 
