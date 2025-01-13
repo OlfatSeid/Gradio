@@ -270,6 +270,138 @@ This code:
 - This script is designed for use in a Python environment like Google Colab or Jupyter Notebook.
 **********
 ***********
+# Named Entity Recognition (NER) Application.
+
+## **Overview**
+This application demonstrates a Named Entity Recognition (NER) tool built using the `dslim/bert-base-NER` model from Hugging Face Transformers library. It identifies entities such as persons, locations, and organizations in a given text and highlights them in the output.
+
+The app leverages the Gradio library to provide an easy-to-use web interface for interacting with the model.
+
+---
+
+## **Features**
+- **Entity Recognition:** Extract entities like persons, locations, and organizations from input text.
+- **Interactive UI:** Users can enter their text, view the recognized entities highlighted in the output, and try predefined example texts.
+- **Example Texts:** Includes various example texts to demonstrate the model’s capabilities.
+- **Custom Styling:** Aesthetic design with a green Submit button and a MediumAquaMarine background.
+
+---
+
+### **Prerequisites**
+1. Python installed on your machine (Python 3.7 or later recommended).
+2. Install the required Python packages:
+   ```bash
+   pip install gradio transformers
+   ```
+
+### **Running the Application**
+1. Save the provided code in a Python file, e.g., `ner_demo.py`.
+2. Run the file using:
+   ```bash
+   python ner_demo.py
+   ```
+3. Open the provided URL in your web browser to interact with the app.
+
+---
+
+## **Code Explanation**
+
+### **Pipeline for Named Entity Recognition**
+```python
+from transformers import pipeline
+NER = pipeline("ner", model="dslim/bert-base-NER")
+```
+- The `pipeline` function initializes the NER model from the Hugging Face library.
+
+### **Token Merging**
+```python
+def merge_tokens(tokens):
+    merged_tokens = []
+    for token in tokens:
+        if (
+            merged_tokens
+            and token['entity'].startswith('I-')
+            and merged_tokens[-1]['entity'].endswith(token['entity'][2:])
+        ):
+            last_token = merged_tokens[-1]
+            last_token['word'] += token['word'].replace('##', '')
+            last_token['end'] = token['end']
+            last_token['score'] = (last_token['score'] + token['score']) / 2
+        else:
+            merged_tokens.append(token)
+    return merged_tokens
+```
+- This function merges consecutive tokens that belong to the same entity, ensuring accurate results for subword tokens.
+
+### **NER Function**
+```python
+def ner(input_text):
+    output = NER(input_text)
+    merged_tokens = merge_tokens(output)
+    return {
+        "text": input_text,
+        "entities": [
+            {"start": t["start"], "end": t["end"], "entity": t["entity"]}
+            for t in merged_tokens
+        ]
+    }
+```
+- This function processes the input text, retrieves raw NER results, merges tokens, and formats the output for display.
+
+### **Gradio Interface**
+```python
+demo = gr.Interface(
+    fn=ner,
+    inputs=[gr.Textbox(label="Text to find entities", lines=2)],
+    outputs=[gr.HighlightedText(label="Text with entities")],
+    title="NER with dslim/bert-base-NER",
+    description="Find entities using the `dslim/bert-base-NER` model under the hood!",
+    allow_flagging="never",
+    examples=[
+        "My name is Olfat, and I live in Giza",
+        "Dr. John Smith works at Stanford University, and his research focuses on Artificial Intelligence. He lives in Palo Alto, California.",
+        "Amal moved to Paris in 2015 and started working at UNESCO as a project manager. Her brother, Karim, is studying medicine in Cairo.",
+        "The Eiffel Tower is located in Paris, France, and attracts millions of tourists every year. Marie and Jean visited it during their honeymoon.",
+        "Microsoft Corporation, headquartered in Redmond, Washington, was founded by Bill Gates and Paul Allen in 1975. It is one of the largest tech companies in the world.",
+        "Barack Obama, the 44th President of the United States, was born in Honolulu, Hawaii, and graduated from Harvard Law School."
+    ],
+    css="""
+        .gradio-container {background-color: MediumAquaMarine;}
+        button.gr-button-primary {background-color: green; color: white; border-radius: 8px; border: none;}
+    """
+)
+
+demo.launch()
+```
+- The `gr.Interface` object defines the Gradio interface.
+- Includes:
+  - **Input:** A textbox for user input.
+  - **Output:** A highlighted text box showing recognized entities.
+  - **Examples:** A list of predefined example texts.
+  - **CSS Styling:** Customizes the background and button colors for improved UI.
+
+---
+
+## **Example Texts**
+1. **"My name is Olfat, and I live in Giza."**
+2. **"Dr. John Smith works at Stanford University, and his research focuses on Artificial Intelligence. He lives in Palo Alto, California."**
+3. **"Amal moved to Paris in 2015 and started working at UNESCO as a project manager. Her brother, Karim, is studying medicine in Cairo."**
+4. **"The Eiffel Tower is located in Paris, France, and attracts millions of tourists every year. Marie and Jean visited it during their honeymoon."**
+5. **"Microsoft Corporation, headquartered in Redmond, Washington, was founded by Bill Gates and Paul Allen in 1975. It is one of the largest tech companies in the world."**
+6. **"Barack Obama, the 44th President of the United States, was born in Honolulu, Hawaii, and graduated from Harvard Law School."**
+
+---
+
+## **Customization**
+- Modify the CSS to change the background or button styles.
+- Add more examples or adjust the `ner` function for additional functionality.
+
+---
+
+## **Acknowledgments**
+- Hugging Face for providing the `dslim/bert-base-NER` model.
+- Gradio for simplifying the creation of interactive web applications.
+
 
 ***********
 ## License
