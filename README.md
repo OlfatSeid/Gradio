@@ -1,4 +1,4 @@
-# Sepia Image Converter with Gradio    kkkkkkkkkkkkkkkkkkkkk
+# Sepia Image Converter with Gradio   
 This project provides a simple Gradio interface to apply a sepia tone filter to uploaded images. It demonstrates how to use Python and Gradio for image processing with a focus on creating vintage-style images.
 
 ## Features
