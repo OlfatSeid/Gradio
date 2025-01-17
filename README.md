@@ -50,8 +50,8 @@ You can style the Gradio interface by providing custom CSS. For example, to chan
    }
 ```
                                        
-*******************************************************************************************************************
-*******************************************************************************************************************
+***************************************************************************************************************
+***************************************************************************************************************
 
 # Speech-to-Text Converter
 This project provides a simple Speech-to-Text Converter using Python. It allows users to record or upload audio files, which are then transcribed into text using Google's Speech Recognition API. The interface is built with Gradio, providing a clean and user-friendly web application.
@@ -394,6 +394,6 @@ demo.launch()
 
 *********
 ## License
-This project is licensed under the MIT License. Feel free to modify and use it as needed.
+This project is licensed under the MIT License.
 
 
